@@ -14,7 +14,7 @@ namespace ChatRoom.Faculty
             if (Session["FProfile"] != null)
             {
                 lblUserName.Text = ((DataTable)Session["FProfile"]).Rows[0]["Fname"].ToString() + " " + ((DataTable)Session["FProfile"]).Rows[0]["Lname"].ToString();
-                imgUser.ImageUrl ="../"+ ((DataTable)Session["FProfile"]).Rows[0]["FImage"].ToString();
+                imgUser.ImageUrl =((DataTable)Session["FProfile"]).Rows[0]["FImage"].ToString();
             }
             else
             {
