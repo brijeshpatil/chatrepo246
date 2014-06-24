@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7BC8A14-D4BF-4AF5-B299-2D7E17FA67CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChatRoom</RootNamespace>
+    <AssemblyName>ChatRoom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50927.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ManageTechnologies.aspx" />
+    <Content Include="Admin\ManageLocations.aspx" />
+    <Content Include="Admin\WebForm3.aspx" />
+    <Content Include="Admin\ManageTechRequests.aspx" />
+    <Content Include="App_Data\ChatRoomDB.mdf" />
+    <Content Include="App_Data\ChatRoomDB_log.ldf">
+      <DependentUpon>ChatRoomDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\MyStyleSheet.css" />
+    <Content Include="css\pygments.css" />
+    <Content Include="css\style.css" />
+    <Content Include="FacultyImages\femaleuserbig.png" />
+    <Content Include="FacultyImages\user1.png" />
+    <Content Include="Faculty\femaleuserbig.png" />
+    <Content Include="Faculty\Home.aspx" />
+    <Content Include="Faculty\ManageProfile.aspx" />
+    <Content Include="Faculty\ChangePassword.aspx" />
+    <Content Include="Faculty\InternalChat.aspx" />
+    <Content Include="Faculty\user1.png" />
+    <Content Include="fonts\font-awesome-4\css\font-awesome.min.css" />
+    <Content Include="Image Buttons\changepassword_button.png" />
+    <Content Include="Image Buttons\change_password_button.gif" />
+    <Content Include="Image Buttons\RiG4xy9iL.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\avatar1_50.jpg" />
+    <Content Include="images\avatar2.jpg" />
+    <Content Include="images\avatar3_50.jpg" />
+    <Content Include="images\avatar4_50.jpg" />
+    <Content Include="images\avatar_50.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\blur_bg.png" />
+    <Content Include="images\bubble-tail-l-white.png" />
+    <Content Include="images\bubble-tail.png" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\stat-down.png" />
+    <Content Include="images\stat-same.png" />
+    <Content Include="images\stat-up.png" />
+    <Content Include="images\sunset2.jpg" />
+    <Content Include="js\behaviour\general.js" />
+    <Content Include="js\bootstrap.datetimepicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="js\bootstrap.datetimepicker\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="js\bootstrap.slider\css\slider.css" />
+    <Content Include="js\bootstrap.slider\js\bootstrap-slider.js" />
+    <Content Include="js\bootstrap.switch\bootstrap-switch.css" />
+    <Content Include="js\bootstrap.switch\bootstrap-switch.min.js" />
+    <Content Include="js\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="js\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="js\ckeditor\adapters\jquery.js" />
+    <Content Include="js\ckeditor\ckeditor.js" />
+    <Content Include="js\fuelux\css\fuelux-responsive.min.css" />
+    <Content Include="js\fuelux\css\fuelux.css" />
+    <Content Include="js\fuelux\img\form.png" />
+    <Content Include="js\fuelux\img\glyphicons-halflings-white.png" />
+    <Content Include="js\fuelux\img\glyphicons-halflings.png" />
+    <Content Include="js\fuelux\loader.min.js" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\css\datatables.css" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\images\sort_asc.png" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\images\sort_asc_disabled.png" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\images\sort_both.png" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\images\sort_desc.png" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\images\sort_desc_disabled.png" />
+    <Content Include="js\jquery.datatables\bootstrap-adapter\js\datatables.js" />
+    <Content Include="js\jquery.datatables\jquery.datatables.min.js" />
+    <Content Include="js\jquery.easypiechart\jquery.easy-pie-chart.css" />
+    <Content Include="js\jquery.easypiechart\jquery.easy-pie-chart.js" />
+    <Content Include="js\jquery.flot\jquery.flot.js" />
+    <Content Include="js\jquery.flot\jquery.flot.labels.js" />
+    <Content Include="js\jquery.flot\jquery.flot.pie.js" />
+    <Content Include="js\jquery.flot\jquery.flot.resize.js" />
+    <Content Include="js\jquery.gritter\css\jquery.gritter.css" />
+    <Content Include="js\jquery.gritter\images\gritter-bg.png" />
+    <Content Include="js\jquery.gritter\images\gritter-light.png" />
+    <Content Include="js\jquery.gritter\images\gritter.png" />
+    <Content Include="js\jquery.gritter\images\ie-spacer.gif" />
+    <Content Include="js\jquery.gritter\js\jquery.gritter.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.maskedinput\jquery.maskedinput.js" />
+    <Content Include="js\jquery.nanoscroller\jquery.nanoscroller.js" />
+    <Content Include="js\jquery.nanoscroller\nanoscroller.css" />
+    <Content Include="js\jquery.nestable\jquery.nestable.js" />
+    <Content Include="js\jquery.parsley\parsley.js" />
+    <Content Include="js\jquery.select2\select2-spinner.gif" />
+    <Content Include="js\jquery.select2\select2.css" />
+    <Content Include="js\jquery.select2\select2.min.js" />
+    <Content Include="js\jquery.select2\select2.png" />
+    <Content Include="js\jquery.select2\select2x2.png" />
+    <Content Include="js\jquery.sparkline\jquery.sparkline.min.js" />
+    <Content Include="js\jquery.ui\jquery-ui.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\prettify\prettify.css" />
+    <Content Include="js\prettify\run_prettify.js" />
+    <Content Include="js\skycons\skycons.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Sup.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="VerifyUser.aspx" />
+    <Content Include="Signup.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageTechnologies.aspx.cs">
+      <DependentUpon>ManageTechnologies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageTechnologies.aspx.designer.cs">
+      <DependentUpon>ManageTechnologies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageLocations.aspx.cs">
+      <DependentUpon>ManageLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageLocations.aspx.designer.cs">
+      <DependentUpon>ManageLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageTechRequests.aspx.cs">
+      <DependentUpon>ManageTechRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageTechRequests.aspx.designer.cs">
+      <DependentUpon>ManageTechRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChatProperties.cs" />
+    <Compile Include="ChatService.cs" />
+    <Compile Include="Common.Master.cs">
+      <DependentUpon>Common.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common.Master.designer.cs">
+      <DependentUpon>Common.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\BlankMaster.Master.cs">
+      <DependentUpon>BlankMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\BlankMaster.Master.designer.cs">
+      <DependentUpon>BlankMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\FacultyMain.Master.cs">
+      <DependentUpon>FacultyMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\FacultyMain.Master.designer.cs">
+      <DependentUpon>FacultyMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\ManageProfile.aspx.cs">
+      <DependentUpon>ManageProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\ManageProfile.aspx.designer.cs">
+      <DependentUpon>ManageProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\InternalChat.aspx.cs">
+      <DependentUpon>InternalChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\InternalChat.aspx.designer.cs">
+      <DependentUpon>InternalChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage2.master.cs">
+      <DependentUpon>MasterPage2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sup.aspx.cs">
+      <DependentUpon>Sup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sup.aspx.designer.cs">
+      <DependentUpon>Sup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyUser.aspx.cs">
+      <DependentUpon>VerifyUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerifyUser.aspx.designer.cs">
+      <DependentUpon>VerifyUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Main.Master" />
+    <Content Include="Common.Master" />
+    <Content Include="Faculty\FacultyMain.Master" />
+    <Content Include="Faculty\BlankMaster.Master" />
+    <None Include="fonts\font-awesome-4\fonts\fontawesome-webfontba72.eot" />
+    <None Include="fonts\font-awesome-4\fonts\fontawesome-webfontba72.svg" />
+    <None Include="fonts\font-awesome-4\fonts\fontawesome-webfontba72.ttf" />
+    <None Include="fonts\font-awesome-4\fonts\fontawesome-webfontba72.woff" />
+    <None Include="fonts\font-awesome-4\fonts\fontawesome-webfontd41d.eot" />
+    <None Include="Image Buttons\Thumbs.db" />
+    <None Include="images\mov_bbb.mp4" />
+    <None Include="images\mov_bbb.ogg" />
+    <None Include="js\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="js\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="js\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="js\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="js\bootstrap\dist\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="js\fuelux\fonts\fuelux-preloader.eot" />
+    <None Include="js\fuelux\fonts\fuelux-preloader.svg" />
+    <None Include="js\fuelux\fonts\fuelux-preloader.ttf" />
+    <None Include="js\fuelux\fonts\fuelux-preloader.woff" />
+    <None Include="js\fuelux\fonts\fuelux-preloaderd41d.eot" />
+    <Content Include="MasterPage2.master" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>6490</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ChatRoom</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

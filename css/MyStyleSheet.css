@@ -1,0 +1,62 @@
+﻿.MyGridTable
+{
+    border:2px solid #2187dc;    
+    color:Black;
+}
+
+.MyGridTable tr,.MyGridTable tr td,.MyGridTable tr th
+{
+    border:0px;    
+}
+
+.MyGridTable tr th
+{
+    background-color:#35a3ff;
+}
+
+.MyBtn
+{
+    background-color:Black;
+    color:White;
+}
+
+.MyTD
+{
+    color:Black;
+    text-align:center;
+}
+
+.MySmallImage
+{
+    border-radius:5px 5px 5px 5px;
+}
+
+.MyChatTable tr, .MyChatTable tr td, .MyChatTable tr th
+{
+    border:0px;
+}
+
+.MyChatTable tr th
+{
+    background-color:White;
+    padding:5px;
+    border-radius:10px 10px 0px 0px;
+}
+
+.MyChatTable tr td
+{
+    background-color:White;
+    padding:5px;
+    border-radius:0px 0px 10px 10px;
+}
+
+.MyChatTable
+{
+    
+    border-radius:10px 10px 10px 10px;
+}
+
+.txtclass
+{
+    resize:none;
+}
