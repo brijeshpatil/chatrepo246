@@ -55,6 +55,7 @@ namespace ChatRoom.Faculty
             PS.Message = TextBox1.Text;
             PS.MakeInterChat(PS);
             FillChatData();
+            TextBox1.Text="";
         }
     }
 }
