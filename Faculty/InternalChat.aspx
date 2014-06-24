@@ -48,7 +48,7 @@
                         <tr>
                             <th valign="middle">
                                 <asp:Image CssClass="MySmallImage" ID="imgFImage" runat="server" Height="50px" Width="50px"
-                                    ImageUrl='<%# "../"+Eval("FImage") %>' />&nbsp;
+                                    ImageUrl='<%# Eval("FImage") %>' />&nbsp;
                                 <asp:Label ID="Label1" ForeColor="#4D90FD" runat="server" Text='<%# Eval("Fname")+" "+Eval("Lname") %>'></asp:Label>
                             </th>
                             <th align="right">
